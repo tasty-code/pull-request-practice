@@ -19,7 +19,7 @@ func getLine(messageType: Message) -> String? {
 }
 
 // 학생 정보 저장할 클래스의 인스턴스
-let student = Student()
+let system = System()
 
 func runProgram() {
     var state: State = .run

@@ -18,6 +18,12 @@ enum Message: String {
     case pleaseInputStudentNameToDelete = "삭제할 학생의 이름을 입력해주세요"
     case deletedStudent = "학생을 삭제하였습니다."
     case cannotFindStudent = "학생을 찾지 못했습니다."
+    case pleaseInputNameAndGradeToUpdate = """
+        성적을 추가할 학생의 이름, 과목 이름, 성적(A+, A0, F 등)을 띄어쓰기로 구분하여 차례로 작성해주세요.
+        입력예) Mickey Swift A+\n만약에 학생의 성적 중 해당 과목이 존재하면 기존 점수가 갱신됩니다.
+        """
+    case pleaseInputStudentNameWantToShowGPA = "평점을 알고싶은 학생의 이름을 입력해주세요"
+    case notExistGrade = "성적이 존재하지 않습니다"
 }
 
 // enum에 명시한 타입에 해당하는 메시지만 출력
