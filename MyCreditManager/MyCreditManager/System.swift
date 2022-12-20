@@ -58,6 +58,9 @@ final class System {
             printMessage(messageType: .cannotFindStudent)
             return .continued
         }
+        // 성적 모두 삭제
+        self.students[index].grades.removeAll()
+        // 학생 삭제
         self.students = self.students.filter { $0.name != students[index].name }
         print(studentName, terminator: " ")
         printMessage(messageType: .deletedStudent)
