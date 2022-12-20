@@ -10,6 +10,7 @@
 		BFCF4DA82951435700B524F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF4DA72951435700B524F0 /* main.swift */; };
 		BFCF4DAF2951440800B524F0 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF4DAE2951440800B524F0 /* Command.swift */; };
 		BFCF4DB12951441800B524F0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF4DB02951441800B524F0 /* Message.swift */; };
+		BFCF4DB32951450500B524F0 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF4DB22951450500B524F0 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		BFCF4DA72951435700B524F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BFCF4DAE2951440800B524F0 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		BFCF4DB02951441800B524F0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BFCF4DB22951450500B524F0 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				BFCF4DA72951435700B524F0 /* main.swift */,
+				BFCF4DB22951450500B524F0 /* Student.swift */,
 				BFCF4DAE2951440800B524F0 /* Command.swift */,
 				BFCF4DB02951441800B524F0 /* Message.swift */,
 			);
@@ -129,6 +132,7 @@
 				BFCF4DB12951441800B524F0 /* Message.swift in Sources */,
 				BFCF4DA82951435700B524F0 /* main.swift in Sources */,
 				BFCF4DAF2951440800B524F0 /* Command.swift in Sources */,
+				BFCF4DB32951450500B524F0 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

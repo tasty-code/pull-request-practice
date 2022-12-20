@@ -18,6 +18,9 @@ func getLine(messageType: Message) -> String? {
     return readLine()
 }
 
+// 학생 정보 저장할 클래스의 인스턴스
+let student = Student()
+
 func runProgram() {
     var state: State = .run
 
