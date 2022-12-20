@@ -38,6 +38,29 @@ final class Student {
         return .run
     }
 
+    func deleteStudent() -> State {
+        // 설명 안내 문구 출력, 삭제할 학생의 이름을 입력받음
+        // EOF(Ctrl + D)는 프로그램 종료로 처리
+        guard let studentName = getLine(messageType: .pleaseInputStudentNameToDelete) else {
+            return .quit
+        }
+        // 이름 유효성 검사
+        if !checkValidName(studentName) {
+            printMessage(messageType: .inputError)
+            return .run
+        }
+        // 존재하지 않는 학생은 삭제할 수 없음
+        if !self.names.contains(studentName) {
+            print(studentName, terminator: " ")
+            printMessage(messageType: .cannotFindStudent)
+            return .run
+        }
+        self.names = self.names.filter { $0 != studentName }
+        print(studentName, terminator: " ")
+        printMessage(messageType: .deletedStudent)
+        return .run
+    }
+
     func checkValidName(_ name: String) -> Bool {
         // ""은 이름으로 사용할 수 없음
         guard !name.isEmpty else {

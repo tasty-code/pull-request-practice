@@ -19,7 +19,7 @@ enum Command: String {
 func executeCommand(_ command: Command) -> State {
     switch command {
     case .addStudent: return student.addStudent()
-    case .deleteStudent: print("2: 학생삭제")
+    case .deleteStudent: return student.deleteStudent()
     case .updateGrade: print("3: 성적추가(변경)")
     case .deleteGrade: print("4: 성적삭제")
     case .showGPA: print("5: 평점보기")
