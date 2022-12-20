@@ -150,7 +150,7 @@ final class System {
             print("\(subject): \(grade.rawValue)")
         }
         // 성적 합
-        let scoreSum = self.students[index].grades.compactMap {gradeToScore(grade: $0.value)}.reduce(0, +)
+        let scoreSum = self.students[index].grades.compactMap { $0.value.gradeToScore() }.reduce(0, +)
         // 평점 소숫점 두자리까지 출력
         print("평점 :", calculateGPA(scoreSum: scoreSum, count: self.students[index].grades.count))
         return .continued
