@@ -8,8 +8,8 @@
 import Foundation
 
 enum State {
-    case quit
-    case run
+    case quit       // 프로그램 종료
+    case continued  // 계속 실행
 }
 
 // 설명문구 출력 후 readLine() 리턴
@@ -21,8 +21,9 @@ func getLine(messageType: Message) -> String? {
 // 학생 정보 저장할 클래스의 인스턴스
 let system = System()
 
+// 성적 관리 프로그램의 메인 함수
 func runProgram() {
-    var state: State = .run
+    var state: State = .continued
 
     // EOF(Ctrl + D)는 종료로 처리
     while state != .quit, let input = getLine(messageType: .menu) {

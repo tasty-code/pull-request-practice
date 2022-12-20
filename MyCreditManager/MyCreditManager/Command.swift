@@ -23,7 +23,6 @@ func executeCommand(_ command: Command) -> State {
     case .updateGrade: return system.updateGrade()
     case .deleteGrade: return system.deleteGrade()
     case .showGPA: return system.showGPA()
-    case .quitProgram: return .quit
+    case .quitProgram: return system.quit()
     }
-    return .run
 }
