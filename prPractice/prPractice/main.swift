@@ -27,10 +27,8 @@ struct Student {
 class DataBase {
     private var students: [String:Student] = [:]
     
-    //- 이미 존재하는 학생은 다시 추가하지 않습니다 -> stuents에 데이터가 있는지 없는지 확인하는게 필요함
-    
     func checkExist(name: String) -> Bool {
-        return students[name] != nil //nil이 아니야?
+        return students[name] != nil
     }
     
     func addStudent(name:String) {
@@ -66,3 +64,5 @@ class DataBase {
     
     
 }
+
+//git
