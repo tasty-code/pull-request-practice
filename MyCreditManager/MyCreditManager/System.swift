@@ -67,7 +67,7 @@ final class System {
         guard let input = getLine(messageType: .pleaseInputNameAndGradeToUpdate) else {
             return .quit
         }
-        guard let inputs = getSplittedInput(input) else {
+        guard let inputs = getSplittedInput(input, count: 3) else {
             printMessage(messageType: .inputError)
             return .run
         }
@@ -80,6 +80,33 @@ final class System {
             return .run
         }
         self.students[index].grades[inputs[1]] = grade
+        return .run
+    }
+
+    func deleteGrade() -> State {
+        // 설명 안내 문구 출력, 성적추가할 학생이름, 과목이름, 성적 입력받음
+        // EOF(Ctrl + D)는 프로그램 종료로 처리
+        guard let input = getLine(messageType: .pleaseInputNameAndSubjectToDelete) else {
+            return .quit
+        }
+        // " "을 기준으로 나눴을 때 배열의 크기가 2인지 확인
+        guard let inputs = getSplittedInput(input, count: 2) else {
+            printMessage(messageType: .inputError)
+            return .run
+        }
+        // 학생이 존재하지 않는 경우
+        guard let index = findStudentIndex(name: inputs[0]) else {
+            printMessage(messageType: .cannotFindStudent)
+            return .run
+        }
+        // 성적이 존재하지 않는 경우
+        guard self.students[index].grades[inputs[1]] != nil else {
+            printMessage(messageType: .inputError)
+            return .run
+        }
+        print("\(self.students[index].name) 학생의 \(inputs[1])", terminator: " ")
+        self.students[index].grades[inputs[1]] = nil
+        printMessage(messageType: .deletedGrade)
         return .run
     }
 
@@ -123,6 +150,7 @@ final class System {
         return nil
     }
 
+    // TODO: getLine()으로 통합시키기 고려, eof와 "", NON_ASCII 다르게 처리하는 것 고려
     func checkValidName(_ name: String) -> Bool {
         // ""은 이름으로 사용할 수 없음
         guard !name.isEmpty else {
@@ -135,14 +163,14 @@ final class System {
         return true
     }
 
-    func getSplittedInput(_ input: String) -> [String]? {
+    func getSplittedInput(_ input: String, count: Int) -> [String]? {
         // 이름 유효성 검사
         guard checkValidName(input) else {
             return nil
         }
         // 입력이 3부분으로 나눠지는지 확인
         let inputs = input.components(separatedBy: " ")
-        guard inputs.count == 3 else {
+        guard inputs.count == count else {
             return nil
         }
         return inputs

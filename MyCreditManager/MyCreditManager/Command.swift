@@ -21,7 +21,7 @@ func executeCommand(_ command: Command) -> State {
     case .addStudent: return system.addStudent()
     case .deleteStudent: return system.deleteStudent()
     case .updateGrade: return system.updateGrade()
-    case .deleteGrade: print("4: 성적삭제")
+    case .deleteGrade: return system.deleteGrade()
     case .showGPA: return system.showGPA()
     case .quitProgram: return .quit
     }
