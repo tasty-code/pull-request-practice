@@ -58,7 +58,7 @@ func calculateScore(temp: [(String,String,String)], who: String) -> ([String],[S
 }
 
 // 성적의 총합을 계산해주는 함수
-func sum(scores:[String]) -> Double{
+func sumScore(scores:[String]) -> Double{
     var sum: Double = 0
     for i in 0...(scores.count-1){
         if scores[i] == "A+"{
@@ -189,7 +189,7 @@ while input != "X" {
             var sum : Double = 0
             var mid : Double = 0
             (subjects, scores) = calculateScore(temp: temp, who: input)
-            sum = sum(scores: scores)
+            sum = sumScore(scores: scores)
             mid = sum/Double(subjects.count)
             print("----------------------")
             print("!!\(input)!!")
