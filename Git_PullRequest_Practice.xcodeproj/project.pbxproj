@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2768CA08294F453B00990B98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768CA07294F453B00990B98 /* main.swift */; };
+		4F352FC1294FFF07004F65AA /* ReadLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F352FC0294FFF07004F65AA /* ReadLine.swift */; };
+		4F352FC429500264004F65AA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4F352FC329500264004F65AA /* Realm */; };
+		4F352FC629500264004F65AA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F352FC529500264004F65AA /* RealmSwift */; };
+		4F352FC829500355004F65AA /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F352FC729500355004F65AA /* StudentViewModel.swift */; };
+		4F352FCB29500386004F65AA /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F352FCA29500386004F65AA /* Student.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2768CA02294F453B00990B98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2768CA04294F453B00990B98 /* Git_PullRequest_Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Git_PullRequest_Practice; sourceTree = BUILT_PRODUCTS_DIR; };
+		2768CA07294F453B00990B98 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4F352FC0294FFF07004F65AA /* ReadLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadLine.swift; sourceTree = "<group>"; };
+		4F352FC729500355004F65AA /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
+		4F352FCA29500386004F65AA /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2768CA01294F453B00990B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F352FC629500264004F65AA /* RealmSwift in Frameworks */,
+				4F352FC429500264004F65AA /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2768C9FB294F453B00990B98 = {
+			isa = PBXGroup;
+			children = (
+				2768CA06294F453B00990B98 /* Git_ Exercise */,
+				2768CA05294F453B00990B98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2768CA05294F453B00990B98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2768CA04294F453B00990B98 /* Git_PullRequest_Practice */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2768CA06294F453B00990B98 /* Git_ Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				2768CA07294F453B00990B98 /* main.swift */,
+				4F352FC0294FFF07004F65AA /* ReadLine.swift */,
+				4F352FC729500355004F65AA /* StudentViewModel.swift */,
+				4F352FCA29500386004F65AA /* Student.swift */,
+			);
+			name = "Git_ Exercise";
+			path = Git_PullRequest_Practice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2768CA03294F453B00990B98 /* Git_PullRequest_Practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2768CA0B294F453B00990B98 /* Build configuration list for PBXNativeTarget "Git_PullRequest_Practice" */;
+			buildPhases = (
+				2768CA00294F453B00990B98 /* Sources */,
+				2768CA01294F453B00990B98 /* Frameworks */,
+				2768CA02294F453B00990B98 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Git_PullRequest_Practice;
+			packageProductDependencies = (
+				4F352FC329500264004F65AA /* Realm */,
+				4F352FC529500264004F65AA /* RealmSwift */,
+			);
+			productName = "Git_ Exercise";
+			productReference = 2768CA04294F453B00990B98 /* Git_PullRequest_Practice */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2768C9FC294F453B00990B98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2768CA03294F453B00990B98 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 2768C9FF294F453B00990B98 /* Build configuration list for PBXProject "Git_PullRequest_Practice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2768C9FB294F453B00990B98;
+			packageReferences = (
+				4F352FC229500264004F65AA /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 2768CA05294F453B00990B98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2768CA03294F453B00990B98 /* Git_PullRequest_Practice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2768CA00294F453B00990B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F352FC829500355004F65AA /* StudentViewModel.swift in Sources */,
+				2768CA08294F453B00990B98 /* main.swift in Sources */,
+				4F352FC1294FFF07004F65AA /* ReadLine.swift in Sources */,
+				4F352FCB29500386004F65AA /* Student.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2768CA09294F453B00990B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2768CA0A294F453B00990B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2768CA0C294F453B00990B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2768CA0D294F453B00990B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2768C9FF294F453B00990B98 /* Build configuration list for PBXProject "Git_PullRequest_Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2768CA09294F453B00990B98 /* Debug */,
+				2768CA0A294F453B00990B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2768CA0B294F453B00990B98 /* Build configuration list for PBXNativeTarget "Git_PullRequest_Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2768CA0C294F453B00990B98 /* Debug */,
+				2768CA0D294F453B00990B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F352FC229500264004F65AA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F352FC329500264004F65AA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F352FC229500264004F65AA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		4F352FC529500264004F65AA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F352FC229500264004F65AA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2768C9FC294F453B00990B98 /* Project object */;
+}
