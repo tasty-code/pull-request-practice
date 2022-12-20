@@ -14,7 +14,7 @@ enum State {
 
 // 설명문구 출력 후 readLine() 리턴
 func getLine(messageType: Message) -> String? {
-    printMessage(messageType: messageType)
+    messageType.printSelf()
     return readLine()
 }
 
@@ -29,12 +29,12 @@ func runProgram() {
     while state != .quit, let input = getLine(messageType: .menu) {
         // enum에 명시하지 않은 명령어는 에러로 처리
         guard let command = Command(rawValue: input) else {
-            printMessage(messageType: .menuError)
+            Message.menuError.printSelf()
             continue
         }
         state = command.execute()
     }
-    printMessage(messageType: .quit)
+    Message.quit.printSelf()
 }
 
 runProgram()

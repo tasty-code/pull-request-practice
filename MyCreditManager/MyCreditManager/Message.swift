@@ -32,6 +32,8 @@ enum Message: String {
 }
 
 // enum에 명시한 타입에 해당하는 메시지만 출력
-func printMessage(messageType: Message) {
-    print(messageType.rawValue)
+extension Message {
+    func printSelf() {
+        print(self.rawValue)
+    }
 }

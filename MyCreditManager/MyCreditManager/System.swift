@@ -25,18 +25,18 @@ final class System {
         }
         // 이름 유효성 검사
         guard checkValidInput(studentName) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         // 이미 존재하는 이름은 사용할 수 없음
         if let index = findStudentIndex(name: studentName) {
             print(self.students[index].name, terminator: "")
-            printMessage(messageType: .cannotAddStudentAlreadyExistName)
+            Message.cannotAddStudentAlreadyExistName.printSelf()
             return .continued
         }
         self.students.append(Student(name: studentName))
         print(studentName, terminator: " ")
-        printMessage(messageType: .addedStudent)
+        Message.addedStudent.printSelf()
         return .continued
     }
 
@@ -49,13 +49,13 @@ final class System {
         }
         // 이름 유효성 검사
         guard checkValidInput(studentName) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         // 존재하지 않는 학생은 삭제할 수 없음
         guard let index = findStudentIndex(name: studentName) else {
             print(studentName, terminator: " ")
-            printMessage(messageType: .cannotFindStudent)
+            Message.cannotFindStudent.printSelf()
             return .continued
         }
         // 성적 모두 삭제
@@ -63,7 +63,7 @@ final class System {
         // 학생 삭제
         self.students = self.students.filter { $0.name != students[index].name }
         print(studentName, terminator: " ")
-        printMessage(messageType: .deletedStudent)
+        Message.deletedStudent.printSelf()
         return .continued
     }
 
@@ -76,17 +76,17 @@ final class System {
         }
         // 입력값이 " "를 기준으로 학생, 과목, 성적으로 나뉘는지 체크
         guard let inputs = getSplittedInput(input, count: 3) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         // 학생이 존재하는지 확인
         guard let index = findStudentIndex(name: inputs[0]) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         // 성적이 "A+" ~ "F"로 유효한지 확인
         guard let grade = Grade(rawValue: inputs[2]) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         self.students[index].grades[inputs[1]] = grade
@@ -102,22 +102,22 @@ final class System {
         }
         // 입력값이 " "를 기준으로 학생, 과목으로 나뉘는지 체크
         guard let inputs = getSplittedInput(input, count: 2) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         // 학생이 존재하지 않는 경우
         guard let index = findStudentIndex(name: inputs[0]) else {
-            printMessage(messageType: .cannotFindStudent)
+            Message.cannotFindStudent.printSelf()
             return .continued
         }
         // 성적이 존재하지 않는 경우
         guard self.students[index].grades[inputs[1]] != nil else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         print("\(self.students[index].name) 학생의 \(inputs[1])", terminator: " ")
         self.students[index].grades[inputs[1]] = nil
-        printMessage(messageType: .deletedGrade)
+        Message.deletedGrade.printSelf()
         return .continued
     }
 
@@ -130,18 +130,18 @@ final class System {
         }
         // 이름 유효성 검사
         guard checkValidInput(studentName) else {
-            printMessage(messageType: .inputError)
+            Message.inputError.printSelf()
             return .continued
         }
         // 존재하지 않는 학생의 평점은 볼 수 없음
         guard let index = findStudentIndex(name: studentName) else {
             print(studentName, terminator: " ")
-            printMessage(messageType: .cannotFindStudent)
+            Message.cannotFindStudent.printSelf()
             return .continued
         }
         // 성적이 존재하지 않는 경우
         guard !self.students[index].grades.isEmpty else {
-            printMessage(messageType: .notExistGrade)
+            Message.notExistGrade.printSelf()
             return .continued
         }
         // 과목 및 성적 출력
