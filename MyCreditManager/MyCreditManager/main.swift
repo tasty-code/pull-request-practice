@@ -32,7 +32,7 @@ func runProgram() {
             printMessage(messageType: .menuError)
             continue
         }
-        state = executeCommand(command)
+        state = command.execute()
     }
     printMessage(messageType: .quit)
 }

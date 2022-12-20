@@ -16,13 +16,15 @@ enum Command: String {
     case quitProgram = "X"
 }
 
-func executeCommand(_ command: Command) -> State {
-    switch command {
-    case .addStudent: return system.addStudent()
-    case .deleteStudent: return system.deleteStudent()
-    case .updateGrade: return system.updateGrade()
-    case .deleteGrade: return system.deleteGrade()
-    case .showGPA: return system.showGPA()
-    case .quitProgram: return system.quit()
+extension Command {
+    func execute() -> State {
+        switch self {
+        case .addStudent: return system.addStudent()
+        case .deleteStudent: return system.deleteStudent()
+        case .updateGrade: return system.updateGrade()
+        case .deleteGrade: return system.deleteGrade()
+        case .showGPA: return system.showGPA()
+        case .quitProgram: return system.quit()
+        }
     }
 }
