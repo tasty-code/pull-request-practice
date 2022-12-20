@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum State {
+    case quit
+    case run
+}
+
 // 설명문구 출력 후 readLine() 리턴
 func getInput() -> String? {
     printMessage(messageType: .input)
@@ -14,16 +19,16 @@ func getInput() -> String? {
 }
 
 func runProgram() {
-    var isQuitProgram = false
+    var state: State = .run
 
     // EOF(Ctrl + D)는 종료로 처리
-    while !isQuitProgram, let input = getInput() {
+    while state != .quit, let input = getInput() {
         // enum에 명시하지 않은 명령어는 에러로 처리
         guard let command = Command(rawValue: input) else {
             printMessage(messageType: .error)
             continue
         }
-        isQuitProgram = executeCommand(command)
+        state = executeCommand(command)
     }
     printMessage(messageType: .quit)
 }
