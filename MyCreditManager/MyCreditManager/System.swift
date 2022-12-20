@@ -83,6 +83,39 @@ final class System {
         return .run
     }
 
+    func showGPA() -> State {
+        // 설명 안내 문구 출력, 평점을 보고 싶은 학생의 이름 입력받음
+        // EOF(Ctrl + D)는 프로그램 종료로 처리
+        guard let studentName = getLine(messageType: .pleaseInputStudentNameWantToShowGPA) else {
+            return .quit
+        }
+        // 이름 유효성 검사
+        if !checkValidName(studentName) {
+            printMessage(messageType: .inputError)
+            return .run
+        }
+        // 존재하지 않는 학생의 평점은 볼 수 없음
+        guard let index = findStudentIndex(name: studentName) else {
+            print(studentName, terminator: " ")
+            printMessage(messageType: .cannotFindStudent)
+            return .run
+        }
+        // 성적이 존재하지 않는 경우
+        if self.students[index].grades.isEmpty {
+            printMessage(messageType: .notExistGrade)
+            return .run
+        }
+        // 과목 및 성적 출력
+        // 점수 합 계산
+        for (subject, grade) in self.students[index].grades {
+            print("\(subject): \(grade.rawValue)")
+        }
+        let scoreSum = self.students[index].grades.compactMap {gradeToScore(grade: $0.value)}.reduce(0, +)
+        // 평점 소숫점 두자리까지 출력
+        print("평점 :", calculateGPA(scoreSum: scoreSum, count: self.students[index].grades.count))
+        return .run
+    }
+
     func findStudentIndex(name: String) -> Int? {
         for (index, student) in students.enumerated() where student.name == name {
             return index
