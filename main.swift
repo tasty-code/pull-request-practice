@@ -14,7 +14,7 @@ var temp : [(String,String,String)] = [("","","")]
 var name: [String] = []
 
 // 이름이 존재하는 지 확인해보는 함수
-func checkIsIn(temp: [(String,String,String)], findingA: String, findingB: String) -> Bool {
+func checkName(temp: [(String,String,String)], findingA: String, findingB: String) -> Bool {
     let count = temp.count
     var find = false
     for i in 0...(count-1){
@@ -28,7 +28,7 @@ func checkIsIn(temp: [(String,String,String)], findingA: String, findingB: Strin
 }
 
 // 이름이 존재한다면, 리스트 중에서 몇번째 인지 index를 알려주는 함수
-func checkTheIndex(temp: [(String,String,String)], findingA: String, findingB: String) -> Int{
+func checkIndex(temp: [(String,String,String)], findingA: String, findingB: String) -> Int{
     let count = temp.count
     var index = 0
     for i in 0...(count-1){
@@ -58,7 +58,7 @@ func calculateScore(temp: [(String,String,String)], who: String) -> ([String],[S
 }
 
 // 성적의 총합을 계산해주는 함수
-func sumtheScore(scores:[String]) -> Double{
+func sum(scores:[String]) -> Double{
     var sum: Double = 0
     for i in 0...(scores.count-1){
         if scores[i] == "A+"{
@@ -139,8 +139,8 @@ while input != "X" {
             temp.append((add[0],add[1],add[2]))
         
             // 입력 예처럼 작성했는 지 확인하고, 추가하는것인지 변경하는 것인지 확인하기 (변경할 경우)
-        } else if add.count == 3 && checkIsIn(temp: temp, findingA: add[0], findingB: add[1]){
-            temp.remove(at: checkTheIndex(temp: temp, findingA: add[0], findingB: add[1]))
+        } else if add.count == 3 && checkName(temp: temp, findingA: add[0], findingB: add[1]){
+            temp.remove(at: checkIndex(temp: temp, findingA: add[0], findingB: add[1]))
             temp.append((add[0],add[1],add[2]))
             print("\(add[0])학생의 \(add[1]) 과목이 \(add[2])로 변경되었습니다.")
         }
@@ -160,12 +160,12 @@ while input != "X" {
         let add = readLine()!.components(separatedBy:" ")
         
         // 입력예처럼 작성했는지 확인하고, 해당 학생이 과목을 수강했는지 확인하기(수강했을 경우) -> 삭제 가능
-        if add.count == 2 && checkIsIn(temp: temp, findingA: add[0], findingB: add[1]){
+        if add.count == 2 && checkName(temp: temp, findingA: add[0], findingB: add[1]){
             print("\(add[0])학생의 \(add[1])과목이 삭제되었습니다.")
-            temp.remove(at: checkTheIndex(temp: temp, findingA: add[0], findingB: add[1]))
+            temp.remove(at: checkIndex(temp: temp, findingA: add[0], findingB: add[1]))
             
             // 입력예처럼 작성했는 지 확인하고, 해당 과목을 수강했는지 확인하기(수강안했을 경우) -> 삭제 불가능
-        } else if add.count == 2 && !checkIsIn(temp: temp, findingA: add[0], findingB: add[1]){
+        } else if add.count == 2 && !checkName(temp: temp, findingA: add[0], findingB: add[1]){
             print("\(add[0])학생은 \(add[1])과목을 수강하지 않습니다!")
             
             // 입력예처럼 작성했는 지 확인하고, 이름 리스트에 있는 지 확인하기
@@ -189,7 +189,7 @@ while input != "X" {
             var sum : Double = 0
             var mid : Double = 0
             (subjects, scores) = calculateScore(temp: temp, who: input)
-            sum = sumtheScore(scores: scores)
+            sum = sum(scores: scores)
             mid = sum/Double(subjects.count)
             print("----------------------")
             print("!!\(input)!!")
