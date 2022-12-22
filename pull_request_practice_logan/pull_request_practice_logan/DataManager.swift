@@ -35,7 +35,7 @@ final class DataManager {
             return point
         }
         print(#function)
-        print("⚠️ Error: convert fail")
+        print("Error: convert fail")
         return nil
     }
     
@@ -44,11 +44,11 @@ final class DataManager {
     ///trueAction : 학생이름 있을때 액션     /  falseAction : 학생이름이 없을때 액션
     func nameCheckAndAction(name: String?, trueAction: (_ name: String) -> Void, falseAction: (_ name: String) -> Void) {
         
-        guard let name else { print("⚠️ 입력이 잘못되었습니다. 다시 확인해주세요."); return }
+        guard let name else { print("입력이 잘못되었습니다. 다시 확인해주세요."); return }
         let studentName = name.trimmingCharacters(in: .whitespaces).firstUppercased
         
         if studentName.isEmpty {
-            print("⚠️ 입력이 없습니다. 다시 확인해주세요.")
+            print("입력이 없습니다. 다시 확인해주세요.")
             return
         }
         if students.contains(where: { (key: String, value: [String:String]) in
@@ -68,10 +68,10 @@ final class DataManager {
         let studentName: String? = readLine()
         
         nameCheckAndAction(name: studentName) { name in
-            print("⚠️ \(name)은 이미 존재하는 학생입니다. 추가하지 않습니다.")
+            print("\(name)은 이미 존재하는 학생입니다. 추가하지 않습니다.")
         } falseAction: { name in
             students[name] = .init([:])
-            print("✅ \(name) 학생을 추가했습니다.")
+            print("\(name) 학생을 추가했습니다.")
         }
     }
     
@@ -82,9 +82,9 @@ final class DataManager {
         
         nameCheckAndAction(name: studentName) { name in
             students[name] = nil
-            print("✅  \(name) 학생을 삭제하였습니다.")
+            print("\(name) 학생을 삭제하였습니다.")
         } falseAction: { name in
-            print("⚠️ \(name) 학생을 찾지 못했습니다.")
+            print("\(name) 학생을 찾지 못했습니다.")
         }
     }
     
@@ -92,10 +92,10 @@ final class DataManager {
     func updateGrades(){
         print("성적을 추가할 학생의 이름, 과목 이름, 성적(A+, A, F 등)을 띄어쓰기로 구분하여 차례로 작성해 주세요.\n입력예) Mickey Swift A+")
         let inputData = readLine()
-        guard let inputData else { print("⚠️ 입력이 잘못되었습니다. 다시 확인해주세요."); return }
+        guard let inputData else { print("입력이 잘못되었습니다. 다시 확인해주세요."); return }
         let studentData = inputData.split(separator: " ")
         if studentData.count < 3 {
-            print("⚠️ 입력이 잘못되었습니다. 다시 확인해주세요.")
+            print("입력이 잘못되었습니다. 다시 확인해주세요.")
             return
         }
         
@@ -104,15 +104,15 @@ final class DataManager {
         let grade = String(studentData[2]).firstUppercased
         
         if !grades.keys.contains(grade){
-            print("⚠️ 잘못된 점수를 입력했습니다. 다시 확인해주세요.")
+            print("잘못된 점수를 입력했습니다. 다시 확인해주세요.")
             return
         }
         
-        print("[✅  \(name) 학생의 \(subject) 과목이 \(grade)로 추가(변경) 되었습니다. ]")
+        print("[ \(name) 학생의 \(subject) 과목이 \(grade)로 추가(변경) 되었습니다. ]")
         nameCheckAndAction(name: name) { name in
             students[name]?.updateValue(grade, forKey: subject)
         } falseAction: { name in
-            print("⚠️ \(name) 학생을 찾지 못했습니다.")
+            print("\(name) 학생을 찾지 못했습니다.")
         }
     }
     
@@ -120,18 +120,18 @@ final class DataManager {
     func deleteGrade(){
         print("성적을 삭제할 학생의 이름, 과목 이름을 띄어쓰기로 구분하여 차례로 작성해주세요.\n입력예) Mickey Swift")
         let inputData = readLine()
-        guard let inputData else { print("⚠️ 입력이 잘못되었습니다. 다시 확인해주세요."); return }
+        guard let inputData else { print("입력이 잘못되었습니다. 다시 확인해주세요."); return }
         let studentData = inputData.split(separator: " ")
-        if studentData.count < 2 { print("⚠️ 입력이 잘못되었습니다. 다시 확인해주세요."); return }
+        if studentData.count < 2 { print("입력이 잘못되었습니다. 다시 확인해주세요."); return }
         
         let name = String(studentData[0]).firstUppercased
         let subject = String(studentData[1]).firstUppercased
         
-        print("✅ \(name) 학생의 \(subject) 과목의 성적이 삭제되었습니다.")
+        print("\(name) 학생의 \(subject) 과목의 성적이 삭제되었습니다.")
         nameCheckAndAction(name: name) { name in
             students[name]?.removeValue(forKey: subject)
         } falseAction: { name in
-            print("⚠️ \(name) 학생을 찾지 못했습니다.")
+            print("\(name) 학생을 찾지 못했습니다.")
         }
     }
     
@@ -154,13 +154,13 @@ final class DataManager {
                 
                 totalPoint = totalPoint/Double(datas!.count)
                 let credit = String(format: "%.2f", totalPoint).trimmingCharacters(in: ["0","."])
-                print("✅ 평점: \(credit)")
+                print("평점: \(credit)")
             } else {
-                print("⚠️ 학생의 성적이 없습니다.")
+                print("학생의 성적이 없습니다.")
             }
             
         } falseAction: { name in
-            print("⚠️ \(name) 학생을 찾지 못했습니다.")
+            print("\(name) 학생을 찾지 못했습니다.")
         }
     }
 }

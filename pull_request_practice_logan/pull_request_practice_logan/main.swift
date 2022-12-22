@@ -45,10 +45,10 @@ func runProgram() {
         
     case "x":
         dataManager.saveData()
-        print("🍕 프로그램을 종료합니다..")
+        print("프로그램을 종료합니다..")
    
     default:
-        print("⚠️ 뭔가 입력이 잘못되었습니다. 1~5 사이의 숫자 혹은 X를 입력해주세요.")
+        print("뭔가 입력이 잘못되었습니다. 1~5 사이의 숫자 혹은 X를 입력해주세요.")
         runProgram()
     }
 }
