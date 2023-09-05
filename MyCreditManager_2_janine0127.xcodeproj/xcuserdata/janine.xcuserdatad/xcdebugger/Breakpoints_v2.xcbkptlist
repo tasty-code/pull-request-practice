@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D348712F-2593-4889-84C8-68CB23F8B2D0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "934F15A5-2698-4E3C-871F-4E559F37F332"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCreditManager_2_janine0127/ServiceModels/service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "Alert"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "934F15A5-2698-4E3C-871F-4E559F37F332 - f413109f919fd2b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyCreditManager_2_janine0127.Message.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;MyCreditManager_2_janine0127.Message&gt;"
+                  moduleName = "MyCreditManager_2_janine0127"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janine/Desktop/personal/tastycode_SeSAC_2st/MyCreditManager_2_janine0127/MyCreditManager_2_janine0127/ServiceModels/service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "934F15A5-2698-4E3C-871F-4E559F37F332 - 3222c7bbd915b8db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyCreditManager_2_janine0127.Message.rawValue.getter : Swift.String"
+                  moduleName = "MyCreditManager_2_janine0127"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janine/Desktop/personal/tastycode_SeSAC_2st/MyCreditManager_2_janine0127/MyCreditManager_2_janine0127/ServiceModels/service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6BAA730-DA43-4BA6-B8DF-1A274BB6DECD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCreditManager_2_janine0127/Models/ServiceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "addGrade()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
