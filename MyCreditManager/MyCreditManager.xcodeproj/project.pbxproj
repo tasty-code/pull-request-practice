@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D3D20E22AA6BD9000BBEC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20E12AA6BD9000BBEC3C /* main.swift */; };
+		0D3D20ED2AA6BDE100BBEC3C /* ConsoleString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20EC2AA6BDE100BBEC3C /* ConsoleString.swift */; };
+		0D3D20EF2AA6BDEC00BBEC3C /* CreditError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20EE2AA6BDEC00BBEC3C /* CreditError.swift */; };
+		0D3D20F12AA6BDF300BBEC3C /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20F02AA6BDF300BBEC3C /* FileIO.swift */; };
+		0D3D20F32AA6BDFF00BBEC3C /* CreditManageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20F22AA6BDFF00BBEC3C /* CreditManageController.swift */; };
+		0D3D20F62AA6BE0B00BBEC3C /* CreditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20F42AA6BE0B00BBEC3C /* CreditModel.swift */; };
+		0D3D20F72AA6BE0B00BBEC3C /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20F52AA6BE0B00BBEC3C /* Credit.swift */; };
+		0D3D20F92AA6BE1300BBEC3C /* CreditManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D20F82AA6BE1300BBEC3C /* CreditManageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D3D20DC2AA6BD9000BBEC3C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D3D20DE2AA6BD9000BBEC3C /* MyCreditManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyCreditManager; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3D20E12AA6BD9000BBEC3C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0D3D20EC2AA6BDE100BBEC3C /* ConsoleString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsoleString.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/Global/ConsoleString.swift; sourceTree = "<group>"; };
+		0D3D20EE2AA6BDEC00BBEC3C /* CreditError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditError.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/Global/CreditError.swift; sourceTree = "<group>"; };
+		0D3D20F02AA6BDF300BBEC3C /* FileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileIO.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/Global/FileIO.swift; sourceTree = "<group>"; };
+		0D3D20F22AA6BDFF00BBEC3C /* CreditManageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditManageController.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/Controller/CreditManageController.swift; sourceTree = "<group>"; };
+		0D3D20F42AA6BE0B00BBEC3C /* CreditModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditModel.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/Model/CreditModel.swift; sourceTree = "<group>"; };
+		0D3D20F52AA6BE0B00BBEC3C /* Credit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Credit.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/Model/Credit.swift; sourceTree = "<group>"; };
+		0D3D20F82AA6BE1300BBEC3C /* CreditManageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditManageView.swift; path = ../../../../tastycode_SeSAC_2st/MyCreditManager_2_assd1108/View/CreditManageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D3D20DB2AA6BD9000BBEC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D3D20D52AA6BD9000BBEC3C = {
+			isa = PBXGroup;
+			children = (
+				0D3D20E02AA6BD9000BBEC3C /* MyCreditManager */,
+				0D3D20DF2AA6BD9000BBEC3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D3D20DF2AA6BD9000BBEC3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D20DE2AA6BD9000BBEC3C /* MyCreditManager */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D3D20E02AA6BD9000BBEC3C /* MyCreditManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D20E12AA6BD9000BBEC3C /* main.swift */,
+				0D3D20E82AA6BDAC00BBEC3C /* Controller */,
+				0D3D20E92AA6BDB700BBEC3C /* Global */,
+				0D3D20EA2AA6BDBF00BBEC3C /* Model */,
+				0D3D20EB2AA6BDC800BBEC3C /* View */,
+			);
+			path = MyCreditManager;
+			sourceTree = "<group>";
+		};
+		0D3D20E82AA6BDAC00BBEC3C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D20F22AA6BDFF00BBEC3C /* CreditManageController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D3D20E92AA6BDB700BBEC3C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D20EC2AA6BDE100BBEC3C /* ConsoleString.swift */,
+				0D3D20EE2AA6BDEC00BBEC3C /* CreditError.swift */,
+				0D3D20F02AA6BDF300BBEC3C /* FileIO.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		0D3D20EA2AA6BDBF00BBEC3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D20F52AA6BE0B00BBEC3C /* Credit.swift */,
+				0D3D20F42AA6BE0B00BBEC3C /* CreditModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D3D20EB2AA6BDC800BBEC3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D20F82AA6BE1300BBEC3C /* CreditManageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D3D20DD2AA6BD9000BBEC3C /* MyCreditManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D3D20E52AA6BD9000BBEC3C /* Build configuration list for PBXNativeTarget "MyCreditManager" */;
+			buildPhases = (
+				0D3D20DA2AA6BD9000BBEC3C /* Sources */,
+				0D3D20DB2AA6BD9000BBEC3C /* Frameworks */,
+				0D3D20DC2AA6BD9000BBEC3C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCreditManager;
+			productName = MyCreditManager;
+			productReference = 0D3D20DE2AA6BD9000BBEC3C /* MyCreditManager */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D3D20D62AA6BD9000BBEC3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0D3D20DD2AA6BD9000BBEC3C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0D3D20D92AA6BD9000BBEC3C /* Build configuration list for PBXProject "MyCreditManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D3D20D52AA6BD9000BBEC3C;
+			productRefGroup = 0D3D20DF2AA6BD9000BBEC3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D3D20DD2AA6BD9000BBEC3C /* MyCreditManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D3D20DA2AA6BD9000BBEC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3D20F92AA6BE1300BBEC3C /* CreditManageView.swift in Sources */,
+				0D3D20ED2AA6BDE100BBEC3C /* ConsoleString.swift in Sources */,
+				0D3D20F32AA6BDFF00BBEC3C /* CreditManageController.swift in Sources */,
+				0D3D20F62AA6BE0B00BBEC3C /* CreditModel.swift in Sources */,
+				0D3D20EF2AA6BDEC00BBEC3C /* CreditError.swift in Sources */,
+				0D3D20F72AA6BE0B00BBEC3C /* Credit.swift in Sources */,
+				0D3D20E22AA6BD9000BBEC3C /* main.swift in Sources */,
+				0D3D20F12AA6BDF300BBEC3C /* FileIO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D3D20E32AA6BD9000BBEC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D3D20E42AA6BD9000BBEC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0D3D20E62AA6BD9000BBEC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0D3D20E72AA6BD9000BBEC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D3D20D92AA6BD9000BBEC3C /* Build configuration list for PBXProject "MyCreditManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3D20E32AA6BD9000BBEC3C /* Debug */,
+				0D3D20E42AA6BD9000BBEC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D3D20E52AA6BD9000BBEC3C /* Build configuration list for PBXNativeTarget "MyCreditManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3D20E62AA6BD9000BBEC3C /* Debug */,
+				0D3D20E72AA6BD9000BBEC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D3D20D62AA6BD9000BBEC3C /* Project object */;
+}
